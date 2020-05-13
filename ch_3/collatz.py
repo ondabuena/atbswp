@@ -5,12 +5,13 @@ def collatz(number):
 	elif number % 2 ==1:
 		print(3* number + 1)
 		return 3*number+1	
-
-ask=int(input("Give me a number "))
-while ask != 1:
-	ask = collatz(ask)
 	
-
+try:
+	ask=int(input("Give me a number "))
+	while ask != 1:
+		ask = collatz(ask)
+except ValueError:
+		print("Please enter an integer. ")			
 
 
 
