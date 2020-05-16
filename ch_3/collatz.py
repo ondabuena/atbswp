@@ -11,7 +11,7 @@ try:
 	while ask != 1:
 		ask = collatz(ask)
 except ValueError:
-		print("Please enter an integer. ")			
+	print("Please enter an integer. ")			
 
 
 
